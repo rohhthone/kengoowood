@@ -65,10 +65,10 @@
     .info>h2{padding: 32px;}
     .info>p{padding: 8px;}
 
-    .faq{width: 100vw; height: 27vw;display: block}
+    .faq{width: 100vw; height: 27vmax;display: block}
     .faq>h2{padding: 32px 0 32px 0; text-align: center; width: 100vw;}
-    .faq>.questions{position: relative;top: 0; left: 0; width: 27vw; max-height: 100vw; background: #fff3;overflow-y: auto;overflow-x: hidden;transform: rotate(90deg) translateY(-100vw);  transform-origin: left top;padding: 22vw 0 0 0;}
-    .questions>.answer{display: flex; align-items: center; flex-direction: column;transform: rotate(-90deg);transform-origin: left top;  width: 22vw; height: 22vw; margin:2vw; border: 1px solid #5553; border-radius: 12px;}
+    .faq>.questions{position: relative;top: 0; left: 0; width: 27vmax; max-height: 100vw;overflow-y: auto;overflow-x: hidden;transform: rotate(90deg) translateY(-100vw);  transform-origin: left top;padding: 22vmax 0 0 0;}
+    .questions>.answer{display: flex; align-items: center; flex-direction: column;transform: rotate(-90deg);transform-origin: left top;  width: 22vmax; height: 22vmax; margin:2vw; border: 1px solid #5553; border-radius: 12px;}
     .questions::-webkit-scrollbar{width: 8px;}.questions::-webkit-scrollbar-thumb{background: #fafafa;border-radius: 8px; border: 1px solid #5553;}
     .answer {text-decoration: none; color: #111;}
     .answer>.head{display: flex; align-items: center; justify-content: space-around; height: 40px; border-bottom:1px solid #5553; width: 100%; border-radius: 12px 12px 0 0 ;}
@@ -96,7 +96,35 @@
     .social>a>img{width: 32px; height: 32px;}
     .social>a{transition: 0.3s; opacity: 1; padding: 8px;}
     .map>.list{display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; width: 60vw;}
-    .list>a{width: 30%;padding: 1vw; text-align: center;}
+    .list>a{padding: 1vw; text-align: center;}
+
+    @media screen and (max-width:100vh) {
+      .scroll>.brand{display: none;}
+      .brand{position: fixed; inset: -90vh 0 0 12px;}
+      header{position: fixed; bottom: 0; left: 0; border-radius: 0;width: 100%;}
+      header>.nav{width: 100%; display: flex; align-items: center; justify-content: space-around;}
+
+      .landing{}
+      .info{width: 90vw;}
+      h1,h2,h3{text-align: center;}
+
+      .faq{height: 40vh;}
+      .faq>.questions{width: 80vw; max-height: 100vw;padding: 76vw 0 0 0;}
+      .questions>.answer{width: 76vw; height: 76vw; margin:2vw; border: 1px solid #5553; border-radius: 12px;}
+
+      .main>.road{margin: 64px 0 64px 0;}
+      .road>.position{height: max-content;}
+      .position>.side{height: auto;}
+      .position>.body{box-sizing: border-box; padding: 16px;}
+
+      .side>.line{height: 100%;}
+
+      .map>.list{width: 100%;}
+      .list>a{margin: 2vw;}
+
+      .main>.map{ margin: 0 0 16px 0;}
+      
+    }
   </style>
   <header>
     <div class="brand"><svg width="32" height="32" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
