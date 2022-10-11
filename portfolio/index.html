@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио KengooWood</title>
+</head>
+<body onscroll="header()">
+  <style>
+    *{margin: 0; padding: 0;}
+    html{font-family: sfpro, sans-serif;display: flex; flex-direction: column; align-items: center; background: #fafafa; overflow-x: hidden; font-size: 18px; color: #111;  }
+    html::-webkit-scrollbar{width: 10px; background: #eee;}html::-webkit-scrollbar-thumb{background: #111; border-left: 5px solid #eee; box-shadow: 1px 0 0 0 #fff7 inset;}
+
+    body{width: 100vw; align-items: center; justify-content: space-around; flex-direction: column; display: flex;}
+
+    header{position: fixed; width: 80vw; height: 48px; bottom: 12px; left: 10%;background: #fffc; display: flex; align-items:  center; box-sizing: border-box; padding: 8px; border-radius: 12px; justify-content: space-between; box-shadow: 0 0 32px 0 #5553; transition: 1s; border: 1px solid #fffc; z-index: 1;}
+    header.scroll{bottom: calc(100% - 60px);transition: 0.5s;}
+
+    .brand{font-size: 0.6em; color: #555; display: flex; align-items: center;}
+    .brand>h1{padding: 8px; font-weight: 400;}
+    .brand>img{width: 48px; height: 48px;}
+    header>.nav{display: flex; align-items: center; justify-content: space-between;}
+    .nav>a{padding: 8px; color: #555; text-decoration: none; transition: 0.3s; position: relative;top:-2px}
+    .nav>a:link:hover{ color: #22e; transition: 0.5s;}
+    .nav>a:visited:hover{ color: #111; transition: 0.5s; display: none;}
+    .nav>a::after{content:""; position: absolute; top: 90%; left: 50%; width: 2px; height: 2px; background: #22e; border-radius: 50%;}
+    .nav>a:hover::after{content:""; position: absolute; top: 90%; left: 5%; width: 90%; height: 1px; background: #22e; transition: 0.5s;}
+
+    .landing{width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: space-around;}
+    .landing>.block{width: 80%; height: 80%;display: flex;}
+    .block>.body{width: 60%; height: 80%; background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 12px; border: 2px solid #fffc;}
+    .block>.side{width: 40%; height: 80%; box-sizing: border-box; padding: 32px; line-height: 1.5;}
+    .side>h2{margin: 0 0 16px 0;}
+
+    .portfolio{width: 80vw; display: flex; align-items: center; justify-content: space-around; display: flex; flex-direction: column;}
+    .portfolio>.object{display: flex; box-sizing: border-box; padding: 36px; justify-content: space-between; border: 1px solid #fffc; box-shadow: 0 0 4px 0 #5553; border-radius: 12px; height: 35vw; margin: 32px 0 32px 0; z-index: 0;}
+    .object>.side{width: 40%; line-height: 1.4; box-sizing: border-box; padding: 16px;}
+    .object>.images{width: 30vw;  height: 20vw; position: relative; top: 0; left: 0; overflow-y: auto;overflow-x: hidden;transform: rotate(-90deg) translateY(-30vw); transform-origin: right top;padding: 24vmax 0 0 0; border-bottom: 2px solid #5553;}
+    .images>.image{transform: rotate(90deg);transform-origin: right top;  width: 25vmax; height: 25vmax; margin:2vw; border: 1px solid #5553; border-radius: 12px; background-position: center; background-repeat: no-repeat; background-size: cover;}
+    .object>.images::-webkit-scrollbar{display: none;}
+    
+  </style>
+  <header>
+    <div class="brand"><svg width="32" height="32" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M54.5566 35.6092C50.0537 49.3904 37.1668 59.0131 21.8997 55.1319C14.3948 53.2205 7.87632 48.2596 3.89516 41.4894C-2.95214 29.8385 -0.650646 16.1376 9.82044 5.90209C20.1486 -3.89572 36.1876 -1.68519 28.3539 13.9709C31.5989 21.2663 24.8159 28.518 19.1265 27.5915C18.9049 29.6561 13.2655 33.6395 10.4208 32.2022C11.4286 49.3612 32.6638 58.196 43.3065 46.3628C44.4644 45.7864 46.9731 37.1851 42.749 35.1569C40.8549 34.3544 39.0394 36.3534 35.3227 37.3383C32.1492 39.0089 27.5176 37.3893 27.4819 33.6249C27.6177 31.9031 29.4546 31.6113 31.9419 28.4524C34.1934 24.418 36.5449 22.1272 40.4475 22.1272C41.7984 12.6358 52.3409 19.3914 45.1577 25.1548C49.5605 24.9578 56.8867 29.3059 54.5638 35.6019L54.5566 35.6092Z" fill="#555"/>
+      </svg><h1>Kengoo Wood</h1>
+    </div>
+    <div class="nav">
+      <a href="#portfolio">Портфолио</a><a href="#about">О нас</a><a href="#contact">Контакты</a>
+    </div>
+    <script>
+      const headerBottom= window.innerHeight;
+  
+      function header(){
+        if(window.pageYOffset + document.getElementsByClassName('landing')[0].offsetHeight>headerBottom){
+          if(document.getElementsByTagName('header')[0].className="scroll"){}
+          else{document.getElementsByTagName('header')[0].classList.toggle("scroll");}
+        }
+        else{
+          if(document.getElementsByTagName('header')[0].className="scroll"){
+            document.getElementsByTagName('header')[0].classList.toggle("scroll");
+          }
+          else {}
+      }
+      }
+    </script>
+  </header>
+  <div class="landing">
+    <div class="block">
+      <div class="body" style="background-image: url(00.jpg);"></div>
+      <div class="side">
+        <h2>Объект в Москве</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar dignissim rutrum. Donec lobortis posuere massa ut gravida. Aliquam in sem ultricies, dictum magna a, vestibulum dui. Phasellus fermentum tincidunt tortor eget tempus. Vivamus et lectus at nisi porttitor imperdiet. In mollis feugiat sapien vel molestie. Proin ullamcorper viverra nibh, vitae mollis erat commodo non. Duis hendrerit lorem vitae pellentesque congue.</p>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio">
+    <div class="object">
+      <div class="images"><div class="image" style="background-image: url(05.jpg);"></div><div class="image" style="background-image: url(01.jpg);"></div><div class="image" style="background-image: url(04.jpg);"></div></div>
+      <div class="side">
+        <h2>Рождественский дом</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar dignissim rutrum. Donec lobortis posuere massa ut gravida. Aliquam in sem ultricies, dictum magna a, vestibulum dui. Phasellus fermentum tincidunt tortor eget tempus. Vivamus et lectus at nisi porttitor imperdiet. In mollis feugiat sapien vel molestie. Proin ullamcorper viverra nibh, vitae mollis erat commodo non. Duis hendrerit lorem vitae pellentesque congue.</p>
+      </div>
+    </div>
+    <div class="object">
+      <div class="images"><div class="image" style="background-image: url(05.jpg);"></div><div class="image" style="background-image: url(01.jpg);"></div><div class="image" style="background-image: url(04.jpg);"></div></div>
+      <div class="side">
+        <h2>Рождественский дом</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar dignissim rutrum. Donec lobortis posuere massa ut gravida. Aliquam in sem ultricies, dictum magna a, vestibulum dui. Phasellus fermentum tincidunt tortor eget tempus. Vivamus et lectus at nisi porttitor imperdiet. In mollis feugiat sapien vel molestie. Proin ullamcorper viverra nibh, vitae mollis erat commodo non. Duis hendrerit lorem vitae pellentesque congue.</p>
+      </div>
+    </div>
+    <div class="object">
+      <div class="images"><div class="image" style="background-image: url(05.jpg);"></div><div class="image" style="background-image: url(01.jpg);"></div><div class="image" style="background-image: url(04.jpg);"></div></div>
+      <div class="side">
+        <h2>Рождественский дом</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar dignissim rutrum. Donec lobortis posuere massa ut gravida. Aliquam in sem ultricies, dictum magna a, vestibulum dui. Phasellus fermentum tincidunt tortor eget tempus. Vivamus et lectus at nisi porttitor imperdiet. In mollis feugiat sapien vel molestie. Proin ullamcorper viverra nibh, vitae mollis erat commodo non. Duis hendrerit lorem vitae pellentesque congue.</p>
+      </div>
+    </div>
+    <div class="object">
+      <div class="images"><div class="image" style="background-image: url(05.jpg);"></div><div class="image" style="background-image: url(01.jpg);"></div><div class="image" style="background-image: url(04.jpg);"></div></div>
+      <div class="side">
+        <h2>Рождественский дом</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar dignissim rutrum. Donec lobortis posuere massa ut gravida. Aliquam in sem ultricies, dictum magna a, vestibulum dui. Phasellus fermentum tincidunt tortor eget tempus. Vivamus et lectus at nisi porttitor imperdiet. In mollis feugiat sapien vel molestie. Proin ullamcorper viverra nibh, vitae mollis erat commodo non. Duis hendrerit lorem vitae pellentesque congue.</p>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <style>
+      .map{width: 80vw; display: flex; flex-wrap: wrap; justify-content: space; flex-direction: column; align-items: center; margin: 64px 0 32px 0;}
+      .map>.social{width:100%; display: flex; align-items: center; justify-content: center; }
+      .social>a:hover{opacity: 0.4; transition: 0.5s;}
+      .social>a>img{width: 32px; height: 32px;}
+      .social>a{transition: 0.3s; opacity: 1; padding: 8px;}
+      .map>.list{display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; width: 60vw;}
+      .list>a{padding: 1vw; text-align: center;}
+    </style>
+    <div class="social">
+      <a href="vk.com"><img src="https://rohhthone.github.io/kengoowood/vk.svg" alt="VK"></a><a href="https://rohhthone.github.io/kengoowood/youtube.com"><img src="https://rohhthone.github.io/kengoowood/youtube.svg" alt="Youtube"></a><a href="pinterest.com"><img src="https://rohhthone.github.io/kengoowood/pinterest.svg" alt="pinterest"></a><a href="medium.com"><img src="https://rohhthone.github.io/kengoowood/medium.svg" alt="medium"></a>
+    </div>
+    <div class="list">
+      <a href="">Карта сайта</a><a href="../">Главная</a><a href="">О нас</a><a href="">Контакты</a><a href="info/">Информация о компании</a><a>Магазин</a><a>Услуги</a><a>Расценки</a><a>Отзывы</a><a>Работа</a>
+    </div>
+  </div>
+  <footer><style>footer{background-color: #111; color: #fafafa; display: flex; align-items: center; justify-content: center; font-size: 18px; height: 32px; width: 100vw;}footer>a{color:#fafafa; text-decoration: none; font-weight: 300; padding: 4px;} footer>a:hover{color: #22e;}</style><a href="https://rohhthone.com">rohh</a><a href="https://rohhthone.com/privacy">privacy</a></footer>
+  
+</body>
+</html>
