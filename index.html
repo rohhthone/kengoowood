@@ -135,9 +135,20 @@
     }
   </script>
   <div class="main">
-    <div class="landing" style="background-image: url(https://rohhthone.github.io/kengoowood/00.jpg);">
+    <div class="landing" id="landing" style="background-image: url(https://rohhthone.github.io/kengoowood/00.jpg);">
       <!-- <a class="left"><</a><a class="right">></a> -->
     </div>
+    <script>
+      let a = 0;
+      function landingImage(){
+        console.log('work');
+        landing.style.backgroundImage="https://rohhthone.github.io/kengoowood/0"+a+".jpg";a+=1;
+      }
+      setInterval(function () {console.log(a);
+        document.getElementById('landing').style.backgroundImage="url('0"+a+".jpg')";
+        a+=1; if (a>6){a=0}}, 6000);
+
+    </script>
     <div class="info">
       <h2>Производство мебели</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar dignissim rutrum. Donec lobortis posuere massa ut gravida. Aliquam in sem ultricies, dictum magna a, vestibulum dui. Phasellus fermentum tincidunt tortor eget tempus. Vivamus et lectus at nisi porttitor imperdiet. In mollis feugiat sapien vel molestie. Proin ullamcorper viverra nibh, vitae mollis erat commodo non. Duis hendrerit lorem vitae pellentesque congue.</p>
