@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <style>
+    @font-face {
+      font-family: sfpro;
+      src: url(https://rohhthone.github.io/kengoowood/SFProDisplay-Regular.ttf);
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: sfpro;
+      src: url(https://rohhthone.github.io/kengoowood/SFProDisplay-Medium.ttf);
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: sfpro;
+      src: url(https://rohhthone.github.io/kengoowood/SFProDisplay-Thin.ttf);
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: sfpro;
+      src: url(https://rohhthone.github.io/kengoowood/SFProDisplay-Semibold.ttf);
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании KengooWood</title>
+  <meta name="description" content="Подробнее о нашей компании KengooWood.">
+</head>
+<body>
+  <style>
+    *{margin: 0; padding: 0;}
+    html{font-family: sfpro, sans-serif; font-size: 18px; color: #111; background-color: #fafafa; line-height: 1.4;}
+    body{width: 100%; display: flex; align-items: center; flex-direction: column; box-sizing: border-box;}
+
+    .info, .information{width: 60%; padding: 64px 0 0 0;}
+    .info{display: flex; justify-content: space-between; margin: 64px 0 0 0;}
+    .info>.logo{min-width: 60%; background-position: center;background-repeat: no-repeat;background-size: contain;}
+    .info>.desc>h2{margin: 0 0 32px 0;}
+    .information>p{margin: 0 0 16px 0;}
+
+    @media screen and (max-width:100vh) {
+      html{font-size: 19px;}
+      .info{flex-direction: column;}
+      .info>.logo{min-width: 100%; height: 90vw; margin: 0 0 32px 0;}
+      .info, .information{width: 90%; padding: 48px 0 0 0;}
+
+    }
+  </style>
+  <header>
+    <style>
+      header{width: 100%; height: 48px; position: fixed; display: flex; align-items: center; justify-content: space-between; inset: 0 0; background-color: #fff5; border-bottom: 1px solid #fffa; box-shadow: 0 2px 8px 0 #1111;}
+      .brand{display: flex; align-items: center; box-sizing: border-box; padding: 8px;}
+      .brand>h1{font-size: 1em; padding: 8px;}
+      .menu{box-sizing: border-box; padding: 8px;}
+      .menu>a{padding: 8px; color: #111; text-decoration: none; transition: 0.3s; position: relative;top:-2px}
+      .menu>a:link:hover{ color: #22e; transition: 0.5s;}
+      .menu>a:visited:hover{ color: #aaa; transition: 0.5s; display: none;}
+      .menu>a::after{content:""; position: absolute; top: 90%; left: 50%; width: 2px; height: 2px; background: #22e; border-radius: 50%;}
+      .menu>a:hover::after{content:""; position: absolute; top: 90%; left: 5%; width: 90%; height: 1px; background: #22e; transition: 0.5s;}
+
+      @media screen and (max-width:100vh) {
+          header>.brand{display: none;}
+          header{justify-content: space-around;}
+        }
+    </style>
+    <div class="brand">
+      <svg width="32" height="32" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M54.5566 35.6092C50.0537 49.3904 37.1668 59.0131 21.8997 55.1319C14.3948 53.2205 7.87632 48.2596 3.89516 41.4894C-2.95214 29.8385 -0.650646 16.1376 9.82044 5.90209C20.1486 -3.89572 36.1876 -1.68519 28.3539 13.9709C31.5989 21.2663 24.8159 28.518 19.1265 27.5915C18.9049 29.6561 13.2655 33.6395 10.4208 32.2022C11.4286 49.3612 32.6638 58.196 43.3065 46.3628C44.4644 45.7864 46.9731 37.1851 42.749 35.1569C40.8549 34.3544 39.0394 36.3534 35.3227 37.3383C32.1492 39.0089 27.5176 37.3893 27.4819 33.6249C27.6177 31.9031 29.4546 31.6113 31.9419 28.4524C34.1934 24.418 36.5449 22.1272 40.4475 22.1272C41.7984 12.6358 52.3409 19.3914 45.1577 25.1548C49.5605 24.9578 56.8867 29.3059 54.5638 35.6019L54.5566 35.6092Z" fill="#111"/>
+    </svg>
+    <h1>Kengoo Wood</h1>
+    </div>
+  <div class="menu">
+    <a href="../">Главная</a>
+    <a href="../portfolio/">Портфолио</a>
+    <a href="../contact/">Контакты</a>
+  </div>
+  </header>
+
+  <div class="info">
+    <div class="logo" style="background-image: url(../logo.png);"></div>
+    <div class="desc">
+      <h2>О компании</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar dignissim rutrum. Donec lobortis posuere massa ut gravida. Aliquam in sem ultricies, dictum magna a, vestibulum dui. Phasellus fermentum tincidunt tortor eget tempus. Vivamus et lectus at nisi porttitor imperdiet. In mollis feugiat sapien vel molestie. Proin ullamcorper viverra nibh, vitae mollis erat commodo non. Duis hendrerit lorem vitae pellentesque congue.</p>
+    </div>
+  </div>
+  <div class="information">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar dignissim rutrum. Donec lobortis posuere massa ut gravida. Aliquam in sem ultricies, dictum magna a, vestibulum dui. Phasellus fermentum tincidunt tortor eget tempus. Vivamus et lectus at nisi porttitor imperdiet. In mollis feugiat sapien vel molestie. Proin ullamcorper viverra nibh, vitae mollis erat commodo non. Duis hendrerit lorem vitae pellentesque congue.</p>
+    <p>In nec enim id elit vulputate ultricies. Phasellus non ex eros. Praesent nec felis iaculis dolor aliquam pellentesque sed vitae lorem. Etiam malesuada commodo sem, eu porta ligula pulvinar sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam fringilla vitae orci ultricies vestibulum. Curabitur scelerisque orci at iaculis feugiat. Donec dignissim, ligula at mollis lacinia, felis velit malesuada libero, nec blandit sem quam ut ante. Sed egestas arcu at est placerat cursus. Sed laoreet luctus lacus, vel ultrices ipsum imperdiet sit amet.</p>
+  </div>
+  <div class="map">
+    <style>
+      .map{width: 80vw; display: flex; flex-wrap: wrap; justify-content: space; flex-direction: column; align-items: center; margin: 64px 0 32px 0;}
+      .map>.social{width:100%; display: flex; align-items: center; justify-content: center; }
+      .social>a:hover{opacity: 0.4; transition: 0.5s;}
+      .social>a>img{width: 32px; height: 32px;}
+      .social>a{transition: 0.3s; opacity: 1; padding: 8px;}
+      .map>.list{display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; width: 60vw;}
+      .list>a{padding: 1vw; text-align: center;}
+    </style>
+    <div class="social">
+      <a href="vk.com"><img src="https://rohhthone.github.io/kengoowood/vk.svg" alt="VK"></a><a href="https://rohhthone.github.io/kengoowood/youtube.com"><img src="https://rohhthone.github.io/kengoowood/youtube.svg" alt="Youtube"></a><a href="pinterest.com"><img src="https://rohhthone.github.io/kengoowood/pinterest.svg" alt="pinterest"></a><a href="medium.com"><img src="https://rohhthone.github.io/kengoowood/medium.svg" alt="medium"></a>
+    </div>
+    <div class="list">
+      <a href="">Карта сайта</a><a href="../">Главная</a><a href="">О нас</a><a href="">Контакты</a><a href="info/">Информация о компании</a><a>Магазин</a><a>Услуги</a><a>Расценки</a><a>Отзывы</a><a>Работа</a>
+    </div>
+  </div>
+  <footer><style>footer{background-color: #111; color: #fafafa; display: flex; align-items: center; justify-content: center; font-size: 19px; height: 36px; width: 100%; padding: 0;}footer>a{color:#fafafa; text-decoration: none; font-weight: 300; padding:0 4px 0 4px;} footer>a:hover{color: #22e;}</style><a href="https://rohhthone.com">rohh</a><a href="https://rohhthone.com/privacy">privacy</a></footer>
+</body>
+</html>

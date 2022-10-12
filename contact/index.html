@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <style>
+    @font-face {
+      font-family: sfpro;
+      src: url(https://rohhthone.github.io/kengoowood/SFProDisplay-Regular.ttf);
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: sfpro;
+      src: url(https://rohhthone.github.io/kengoowood/SFProDisplay-Medium.ttf);
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: sfpro;
+      src: url(https://rohhthone.github.io/kengoowood/SFProDisplay-Thin.ttf);
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: sfpro;
+      src: url(https://rohhthone.github.io/kengoowood/SFProDisplay-Semibold.ttf);
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты KengooWood</title>
+  <meta name="description" content="Контактные данные компании по производству мебели и элементов декора.">
+</head>
+<body>
+  <style>
+    *{margin: 0; padding: 0;}
+    html{font-family: sfpro, sans-serif; font-size: 18px;}
+    body{display: flex; align-items: center; justify-content: space-around; flex-direction: column; width: 100%;}
+    
+    .contact{width: 60%; margin: 128px 0 0 0; text-align: center;}
+    .contact>a{width: 100%; display: block; padding: 8px 0 8px 0; color: #111; text-decoration: none; font-weight: 500; transition: 0.3s;}
+    .contact>a:hover{transition: 0.5s; color: #22e;}
+    .contact>form{margin:64px 0 0 0;}
+    @media screen and (max-width:100vh) {
+          .contact{width:90vw;}
+        }
+  </style>
+  <header>
+    <style>
+      header{width: 100%; height: 48px; position: fixed; display: flex; align-items: center; justify-content: space-between; inset: 0 0; background-color: #fff5; border-bottom: 1px solid #fffa; box-shadow: 0 2px 8px 0 #1111;}
+      .brand{display: flex; align-items: center; box-sizing: border-box; padding: 8px;}
+      .brand>h1{font-size: 1em; padding: 8px;}
+      .menu{box-sizing: border-box; padding: 8px;}
+      .menu>a{padding: 8px; color: #111; text-decoration: none; transition: 0.3s; position: relative;top:-2px}
+      .menu>a:link:hover{ color: #22e; transition: 0.5s;}
+      .menu>a:visited:hover{ color: #aaa; transition: 0.5s; display: none;}
+      .menu>a::after{content:""; position: absolute; top: 90%; left: 50%; width: 2px; height: 2px; background: #22e; border-radius: 50%;}
+      .menu>a:hover::after{content:""; position: absolute; top: 90%; left: 5%; width: 90%; height: 1px; background: #22e; transition: 0.5s;}
+
+      @media screen and (max-width:100vh) {
+          html{font-size: 19px;}
+          header>.brand{display: none;}
+          header{justify-content: space-around;}
+        }
+    </style>
+    <div class="brand">
+      <svg width="32" height="32" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M54.5566 35.6092C50.0537 49.3904 37.1668 59.0131 21.8997 55.1319C14.3948 53.2205 7.87632 48.2596 3.89516 41.4894C-2.95214 29.8385 -0.650646 16.1376 9.82044 5.90209C20.1486 -3.89572 36.1876 -1.68519 28.3539 13.9709C31.5989 21.2663 24.8159 28.518 19.1265 27.5915C18.9049 29.6561 13.2655 33.6395 10.4208 32.2022C11.4286 49.3612 32.6638 58.196 43.3065 46.3628C44.4644 45.7864 46.9731 37.1851 42.749 35.1569C40.8549 34.3544 39.0394 36.3534 35.3227 37.3383C32.1492 39.0089 27.5176 37.3893 27.4819 33.6249C27.6177 31.9031 29.4546 31.6113 31.9419 28.4524C34.1934 24.418 36.5449 22.1272 40.4475 22.1272C41.7984 12.6358 52.3409 19.3914 45.1577 25.1548C49.5605 24.9578 56.8867 29.3059 54.5638 35.6019L54.5566 35.6092Z" fill="#111"/>
+    </svg>
+    <h1>Kengoo Wood</h1>
+    </div>
+  <div class="menu">
+    <a href="../">Главная</a>
+    <a href="../portfolio/">Портфолио</a>
+    <a href="../about/">О нас</a>
+  </div>
+  </header>
+  <div class="contact">
+    <h2>Контакты</h2>
+    <a href="tel:+70000000000">+70000000000</a>
+    <a href="mailto:alexander@kengoowood.ru">alexander@kengoowood.ru</a>
+    <a href="#">Город, улица, дом</a>
+    <form action="#">
+      <style>
+        form>input{width: 100%; height: 32px; border-radius: 12px; border: 1px solid #fffc; font-family: sfpro, sans-serif; font-size: 18px; box-sizing: border-box; padding: 8px; box-shadow: 0 0 8px 1px #1111; font-weight: 400;}
+        form>input:focus{ outline: 1px solid #22e;}
+        form>textarea{width: 100%; border-radius: 12px; border: 1px solid #fffc; font-family: sfpro, sans-serif; font-size: 18px; box-sizing: border-box; padding: 8px; box-shadow: 0 0 8px 1px #1111; resize: none; margin: 16px 0 16px 0 ; font-weight: 400;}
+        form>textarea:focus{ outline: 1px solid #22e;}
+        form>a{width: 100%; height: 32px; border-radius: 12px; border: 1px solid #fffc; font-family: sfpro, sans-serif; font-size: 18px; box-sizing: border-box; padding: 8px; box-shadow: 0 0 8px 1px #1111; color: #111; text-decoration: none; display: flex; align-items: center; justify-content: center;}
+        form>a:hover{color: #555;}
+      </style>
+      <input type="text" name="title" id="title" placeholder="Тема">
+      <textarea name="text" id="text" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+      <a href="mailto:alexander@kengoowood.ru">Отправить</a>
+    </form>
+  </div>
+  <div class="map">
+    <style>
+      .map{width: 80vw; display: flex; flex-wrap: wrap; justify-content: space; flex-direction: column; align-items: center; margin: 64px 0 32px 0;}
+      .map>.social{width:100%; display: flex; align-items: center; justify-content: center; }
+      .social>a:hover{opacity: 0.4; transition: 0.5s;}
+      .social>a>img{width: 32px; height: 32px;}
+      .social>a{transition: 0.3s; opacity: 1; padding: 8px;}
+      .map>.list{display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; width: 60vw;}
+      .list>a{padding: 1vw; text-align: center;}
+    </style>
+    <div class="social">
+      <a href="vk.com"><img src="https://rohhthone.github.io/kengoowood/vk.svg" alt="VK"></a><a href="https://rohhthone.github.io/kengoowood/youtube.com"><img src="https://rohhthone.github.io/kengoowood/youtube.svg" alt="Youtube"></a><a href="pinterest.com"><img src="https://rohhthone.github.io/kengoowood/pinterest.svg" alt="pinterest"></a><a href="medium.com"><img src="https://rohhthone.github.io/kengoowood/medium.svg" alt="medium"></a>
+    </div>
+    <div class="list">
+      <a href="">Карта сайта</a><a href="../">Главная</a><a href="">О нас</a><a href="">Контакты</a><a href="info/">Информация о компании</a><a>Магазин</a><a>Услуги</a><a>Расценки</a><a>Отзывы</a><a>Работа</a>
+    </div>
+  </div>
+  <footer><style>footer{background-color: #111; color: #fafafa; display: flex; align-items: center; justify-content: center; font-size: 19px; height: 36px; width: 100%; padding: 0;}footer>a{color:#fafafa; text-decoration: none; font-weight: 300; padding:0 4px 0 4px;} footer>a:hover{color: #22e;}</style><a href="https://rohhthone.com">rohh</a><a href="https://rohhthone.com/privacy">privacy</a></footer>
+</body>
+</html>
