@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
+
+
+
   <style>
     @font-face {
       font-family: sfpro;
@@ -32,26 +32,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Производство | Kengoo Wood</title>
   <meta name="description" content="Мы - компания, которая занимается производством мебели и оформлением дизайна интерьеров под ключ.">
-</head>
-<body onscroll="header()">
+
+
   <style>
     *{margin: 0; padding: 0;}
     html{font-family: sfpro, sans-serif;display: flex; flex-direction: column; align-items: center; background: #fafafa; overflow-x: hidden; font-size: 18px; color: #111; scroll-behavior:smooth}
     html::-webkit-scrollbar{width: 10px; background: #eee;}html::-webkit-scrollbar-thumb{background: #111; border-left: 5px solid #eee; box-shadow: 1px 0 0 0 #fff7 inset;}
-
     body{display: flex; align-items: center; flex-direction: column;}
-
     .main{display: flex; align-items: center; flex-direction: column;}
     .main>div{margin: 0 0 64px 0;}
     
     .landing{height: 100vh; width: 100vw; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center; justify-content: space-between;}
     .landing>a{margin: 8px; width: 32px; height: 32px; padding: 16px; background: #fff3; border-radius: 50%;display: flex; align-items: center; justify-content: space-around;}
     .landing>a:hover{background: #fff5;color: #333; cursor: pointer;}
-
     .info{width: 60vw; display: flex; align-items: center; flex-direction: column;}
     .info>h2{padding: 32px;}
     .info>p{padding: 8px;}
-
     .road{width: 80vw; display: flex; flex-direction: column; align-items: center; margin: 0 0 0 0;}
     .road>.position{width: 100%; height: auto;display: flex;}
     .position>.side{width:20%;height: auto; display: flex; align-items: center; flex-direction: column; justify-content: space-between;}
@@ -59,10 +55,8 @@
     .side>.line{width: 2px; height: 100%; background-color: #5553;}
     .position>.body>h3{margin: 16px 0 16px 0;}
     .position>.body>p{padding: 0 0 16px 0;}
-
     .contact{width: 80vw; display: flex; align-items: center; justify-content: space-between; flex-direction: column;}
     .contact>form{width: 100%;display: flex; align-items: center; justify-content: space-between; flex-direction: column;}
-
     .map{width: 80vw; display: flex; flex-wrap: wrap; justify-content: space; flex-direction: column; align-items: center;}
     .map>.social{width:100%; display: flex; align-items: center; justify-content: center; }
     .social>a:hover{opacity: 0.4; transition: 0.5s;}
@@ -70,30 +64,24 @@
     .social>a{transition: 0.3s; opacity: 1; padding: 8px;}
     .map>.list{display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; width: 60vw;}
     .list>a{padding: 1vw; text-align: center;}
-
     @media screen and (max-width:100vh) {
       .info{width: 90vw;}
       h1,h2,h3{text-align: center;}
-
       .main>.road{margin: 0 0 64px 0;}
       .road>.position{height: max-content;}
       .position>.side{height: auto;}
       .position>.body{box-sizing: border-box; padding: 16px;}
-
       .side>.line{height: 100%;}
-
       .map>.list{width: 100%;}
       .list>a{margin: 2vw;}
-
       .main>.map{ margin: 0 0 16px 0;}
       
     }
   </style>
   <header>
     <style>
-        header{position: fixed; width: 80vw; height: 48px; bottom: 12px; background: #fffc; display: flex; align-items:  center; align-self: center; box-sizing: border-box; padding: 8px; border-radius: 12px; justify-content: space-between; box-shadow: 0 0 32px 0 #5553; transition: 1s; border: 1px solid #fffc;}
+        header{;z-index:1;position: fixed; width: 80vw; height: 48px; bottom: 12px; left: 9.5%; background: #fffc; display: flex; align-items:  center; align-self: center; box-sizing: border-box; padding: 8px; border-radius: 12px; justify-content: space-between; box-shadow: 0 0 32px 0 #5553; transition: 1s; border: 1px solid #fffc;}
         header.scroll{bottom: calc(100% - 60px);transition: 0.5s;}
-
         .brand{font-size: 0.6em; color: #555; display: flex; align-items: center;}
         .brand>h1{padding: 8px; font-weight: 400;}
         .brand>img{width: 48px; height: 48px;}
@@ -103,7 +91,6 @@
         .nav>a:visited:hover{ color: #111; transition: 0.5s; display: none;}
         .nav>a::after{content:""; position: absolute; top: 90%; left: 50%; width: 2px; height: 2px; background: #22e; border-radius: 50%;}
         .nav>a:hover::after{content:""; position: absolute; top: 90%; left: 5%; width: 90%; height: 1px; background: #22e; transition: 0.5s;}
-
         @media screen and (max-width:100vh) {
           .scroll>.brand{display: none;}
           .brand{position: fixed; inset: -80vh 0 0 12px;}
@@ -112,11 +99,11 @@
         }
     </style>
     <div class="brand"><svg width="32" height="32" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M54.5566 35.6092C50.0537 49.3904 37.1668 59.0131 21.8997 55.1319C14.3948 53.2205 7.87632 48.2596 3.89516 41.4894C-2.95214 29.8385 -0.650646 16.1376 9.82044 5.90209C20.1486 -3.89572 36.1876 -1.68519 28.3539 13.9709C31.5989 21.2663 24.8159 28.518 19.1265 27.5915C18.9049 29.6561 13.2655 33.6395 10.4208 32.2022C11.4286 49.3612 32.6638 58.196 43.3065 46.3628C44.4644 45.7864 46.9731 37.1851 42.749 35.1569C40.8549 34.3544 39.0394 36.3534 35.3227 37.3383C32.1492 39.0089 27.5176 37.3893 27.4819 33.6249C27.6177 31.9031 29.4546 31.6113 31.9419 28.4524C34.1934 24.418 36.5449 22.1272 40.4475 22.1272C41.7984 12.6358 52.3409 19.3914 45.1577 25.1548C49.5605 24.9578 56.8867 29.3059 54.5638 35.6019L54.5566 35.6092Z" fill="#555"/>
+      <path d="M54.5566 35.6092C50.0537 49.3904 37.1668 59.0131 21.8997 55.1319C14.3948 53.2205 7.87632 48.2596 3.89516 41.4894C-2.95214 29.8385 -0.650646 16.1376 9.82044 5.90209C20.1486 -3.89572 36.1876 -1.68519 28.3539 13.9709C31.5989 21.2663 24.8159 28.518 19.1265 27.5915C18.9049 29.6561 13.2655 33.6395 10.4208 32.2022C11.4286 49.3612 32.6638 58.196 43.3065 46.3628C44.4644 45.7864 46.9731 37.1851 42.749 35.1569C40.8549 34.3544 39.0394 36.3534 35.3227 37.3383C32.1492 39.0089 27.5176 37.3893 27.4819 33.6249C27.6177 31.9031 29.4546 31.6113 31.9419 28.4524C34.1934 24.418 36.5449 22.1272 40.4475 22.1272C41.7984 12.6358 52.3409 19.3914 45.1577 25.1548C49.5605 24.9578 56.8867 29.3059 54.5638 35.6019L54.5566 35.6092Z" fill="#555"></path>
       </svg><h1>Kengoo Wood</h1>
     </div>
     <div class="nav">
-      <a href="https://rohhthone.github.io/kengoowood/portfolio/">Портфолио</a><a href="https://rohhthone.github.io/kengoowood/about/">О нас</a><a href="https://rohhthone.github.io/kengoowood/contact/">Контакты</a>
+      <a href="https://kengoowood.ru/portfolio/">Портфолио</a><a href="https://kengoowood.ru/about/">О нас</a><a href="https://kengoowood.ru/contact/">Контакты</a>
     </div>
   </header>
   <script>
@@ -135,24 +122,45 @@
     }
   </script>
   <div class="main">
-    <div class="landing" id="landing" style="background-image: url(https://rohhthone.github.io/kengoowood/00.jpg);">
+    <div class="landing" id="landing" style="z-index: -1;">
+      <style>
+            img.fadein{transition: 1s; opacity: 0;}
+            img:not(.fadein){transition: 1s; opacity: 1;}
+            #backimage1{width: 100%; height: 100%;}
+            #backimage2{width: 100%; height: 100%;}
+      </style>
+      <img id="backimage1" class="backfade" src="https://rohhthone.github.io/kengoowood/00.jpg" style="z-index: -1; position:absolute; top:0; left:0;">
+      <img id="backimage2" class="backfade" src="https://rohhthone.github.io/kengoowood/01.jpg" style="z-index: -2; position:absolute; top:0; left:0;">
       <!-- <a class="left"><</a><a class="right">></a> -->
     </div>
     <script>
-      let a = 0;
-      function landingImage(){
-        console.log('work');
-        landing.style.backgroundImage="https://rohhthone.github.io/kengoowood/0"+a+".jpg";a+=1;
-      }
-      setInterval(function () {console.log(a);
-        document.getElementById('landing').style.backgroundImage="url('0"+a+".jpg')";
-        a+=1; if (a>6){a=0}}, 6000);
-
+      let amountOfImages=6;
+      let changingTime=6000;
+      let a = 2;
+      let b = 3;
+      setInterval(() => {
+        document.getElementById('backimage1').classList.toggle('fadein');
+      }, changingTime);
+      setTimeout(() => {
+        document.getElementById('backimage1').src="https://rohhthone.github.io/kengoowood/0"+a+".jpg";
+          a+=2; if (a>amountOfImages){a=0}
+        setInterval(() => {
+          document.getElementById('backimage1').src="https://rohhthone.github.io/kengoowood/0"+a+".jpg";
+          a+=2; if (a>amountOfImages){a=0}
+        }, changingTime*2);
+      }, changingTime*2-changingTime/2);
+      setTimeout(() => {
+        document.getElementById('backimage2').src="https://rohhthone.github.io/kengoowood/0"+b+".jpg";
+          b+=2; if (b>amountOfImages){b=1}
+        setInterval(() => {
+          document.getElementById('backimage2').src="https://rohhthone.github.io/kengoowood/0"+b+".jpg";
+          b+=2; if (b>amountOfImages){b=1}
+        }, changingTime*2);
+      }, changingTime*2+changingTime/2);
     </script>
     <div class="info">
       <h2>Производство мебели</h2>
       <p>Наша компания занимается производством мебели разной сложность, у нас есть опыт производства как бюджетных, так и премиальных товаров. Наше оборудование способно производить товары как в коммерческих так и в частных условиях ручного производства. Для нас главной задачей является комфорт и удовольствие от приобретенной покупки. Мы гарантируем то, что наши работы будут служить долго и радовать Вас долгие годы без лишних проблем. </p>
-
       <p>Мы способны предоставить Вам полный комплекс дизайнерской мебели под ключ по вашим эскизам и задумкам. Наши специалисты в области дизайна помогут доработать проект, а 3D дизайнеры сделают визуализацию мебели и интерьера под Ваши нужды. Вся мебель проходит тестирование в полевых условиях на каждом <a href="#road">этапе производства.</a> Так что результат будет даже превосходить ожидания!</p>
     </div>
     <div class="faq">
@@ -165,7 +173,6 @@
       
       .scroll-snap{scroll-snap-type: inline mandatory; scroll-behavior: smooth; transition: 0.5s;}
       .scroll-snap>div{ scroll-snap-align: start;}
-
       @media screen and (max-width:100vh) {
         .faq{height: auto;}
         .faq>.questions{grid-auto-columns: 80%;}
@@ -210,12 +217,10 @@
         let f01;
         let pos = { top: 0, left: 0, x: 0, y: 0 };
         const mouseDownHandler = function (func) {
-
           f01 = func;
           f01.scrollTop = 0;
           f01.scrollLeft = 0;
           
-
           let e=window.event;
             pos = {
                 // The current scroll
@@ -332,13 +337,11 @@
     </div>
     <div class="map">
       <div class="social">
-        <a href="vk.com"><img src="vk.svg" alt="VK"></a><a href="youtube.com"><img src="youtube.svg" alt="Youtube"></a><a href="pinterest.com"><img src="pinterest.svg" alt="pinterest"></a><a href="medium.com"><img src="medium.svg" alt="medium"></a>
+        <a href="vk.com"><img src="https://rohhthone.github.io/kengoowood/vk.svg" alt="VK"></a><a href="youtube.com"><img src="https://rohhthone.github.io/kengoowood/youtube.svg" alt="Youtube"></a><a href="pinterest.com"><img src="https://rohhthone.github.io/kengoowood/pinterest.svg" alt="pinterest"></a><a href="medium.com"><img src="https://rohhthone.github.io/kengoowood/medium.svg" alt="medium"></a>
       </div>
       <div class="list">
         <a href="portfolio/">Портфолио</a><a href="about/">О нас</a><a href="contact/">Контакты</a>
       </div>
     </div>
   </div>
-  <footer><style>footer{background-color: #111; color: #fafafa; display: flex; align-items: center; justify-content: center; font-size: 19px; height: 36px; width: 100%; padding: 0;}footer>a{color:#fafafa; text-decoration: none; font-weight: 300; padding:0 4px 0 4px;} footer>a:hover{color: #22e;}</style><a href="https://rohhthone.com">rohh</a><a href="https://rohhthone.com/privacy">privacy</a></footer>
-</body>
-</html>
+<script></script>
