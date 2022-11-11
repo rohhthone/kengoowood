@@ -63,8 +63,10 @@
     <style>
       main{width: 100%; display: flex; align-items: center; justify-content: space-around; flex-direction: column;}
       main>.image>img{border-radius: 16px; border: 2px solid #1114;max-width: 60vw;}
+      main>.image>.img{border-radius: 16px; border: 2px solid #1114;max-width: 60vw; width: 60vw;  aspect-ratio: 1/1;background-size:cover; background-position:center; background-repeat: no-repeat;}
       @media screen and (max-width:100vh) {
         main>.image>img{max-width: 95vw;}
+        main>.image>.img{max-width: 95vw;width: 95vw;}
       }
     </style>
     <style>
@@ -91,9 +93,11 @@
     </div>
     <style>
       .normal.gallery{display: flex; align-items: center; justify-content: center; gap: 1em; flex-wrap: wrap; width: 100%; box-sizing: border-box; padding: 5vw;} 
-      .normal.gallery>img{width: 256px; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; border: 2px solid #1112;} 
+      .normal.gallery>.img{width: 256px; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; border: 2px solid #1112; background-size:cover; background-position:center; background-repeat: no-repeat;} 
+      .normal.gallery>img{width: 256px; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; border: 2px solid #1112;}  
       @media screen and (max-width:100vh) {
         .normal.gallery>img{width: 40vw; } 
+        .normal.gallery>.img{width: 40vw; } 
       }
     </style>
     <div class="normal gallery">
